@@ -1,0 +1,26 @@
+
+
+    Run sudo apt-get purge firefox Unless you are serious about data privacy this step should be enough
+
+    Delete .mozilla/firefox/ in your home directory, should it still be there
+
+    Delete .macromedia/ and .adobe in your home directory, these can contain "Flash Cookies" stored by the browser. The same is true, if applicable, for Silverlight (Moonlight) and other plugins, they can allow websites to store data on your computer.
+
+    Delete /etc/firefox/, this is where your preferences and user-profiles are stored
+
+    Delete /usr/lib/firefox/ should it still be there
+
+    Delete /usr/lib/firefox-addons/ should it still be there
+
+
+
+
+A complete purge includes
+
+    sudo apt-get purge thunderbird*
+    rm -r /home/<username>/.thunderbird
+
+
+sudo apt-get remove --purge "libreoffice*"
+sudo apt-get clean
+sudo apt-get autoremove
