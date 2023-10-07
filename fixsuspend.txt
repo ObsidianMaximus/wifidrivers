@@ -1,0 +1,12 @@
+The suspend option in debian doesn't really suspend it. Rather it makes the display get no input while keeping the system on.
+
+Led lights work on cabinet and keyboard + mouse, but screen is blank and only monitor bottom light blinks.
+
+This is the solution for amd drivers - 
+
+Installing `amdgpu-install` and installing the AMD graphic cards components[1] after checking the secure boot support[2]:
+```
+amdgpu-install --usecase=graphics
+
+
+# Quote : https://bugs.launchpad.net/ubuntu/+source/linux-signed-hwe-5.19/+bug/2008774
