@@ -1,1 +1,1 @@
-If anyone has already tools installed on Linux and still isn't able to copy/paste, please make sure you have open-vm-tools-desktop package installed as this seems to be a key package here. You can install it on Ubuntu sudo apt-get install open-vm-tools open-vm-tools-desktop
+If anyone has already tools installed on Linux and still isn't able to copy/paste, please make sure you have open-vm-tools-desktop package installed as this seems to be a key package here. You can install it on Ubuntu  **sudo apt-get install open-vm-tools open-vm-tools-desktop**
