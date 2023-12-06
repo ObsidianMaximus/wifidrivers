@@ -22,7 +22,7 @@ grub-install: error: will not proceed with blocklists.
 
 **NOTE : DO THIS AFTER INSTALLING PARTED!**
 
-`sudo parted /dev/sdX`  *# Here replace X with the letter of your drive [ yes the drive, and not any sub-partition of it.*
+`sudo parted /dev/sdX`  *# Here replace X with the letter of your drive [ yes the drive, not any sub-partition of it. ]*
 
 `(parted) mklabel gpt`
 
