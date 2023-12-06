@@ -6,7 +6,9 @@ Installing for i386-pc platform.
 
 grub-install: warning: this GPT partition label contains no BIOS Boot Partition; embedding won't be possible.
 
-grub-install: error: embedding is not possible, but this is required for cross-disk install.
+grub-install: warning: Embedding is not possible.  GRUB can only be installed in this setup by using blocklists.  However, blocklists are UNRELIABLE and their use is discouraged..
+
+grub-install: error: will not proceed with blocklists.
 ```
 
 ## Solve :
