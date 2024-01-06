@@ -16,4 +16,6 @@ Some fixes -
 
 6) [Setting up dns and disallowing NetworkManager ( or whichever else you use, it will differ, please read the man pages ) to change it on each restart.](https://github.com/ObsidianMaximus/wifidrivers/blob/main/dnsconflict.md)
 
-7) And ofcourse, the [**WIFIDRIVERS**.](https://github.com/ObsidianMaximus/wifidrivers/blob/main/commands_for_drivers.txt)
+7) [Using ADB and Fastboot commands for Android in linux shell.](https://github.com/ObsidianMaximus/wifidrivers/blob/master/fastbootANDadb.txt)
+
+8) And ofcourse, the [**WIFIDRIVERS**.](https://github.com/ObsidianMaximus/wifidrivers/blob/main/commands_for_drivers.txt)
