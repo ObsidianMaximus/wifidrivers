@@ -18,4 +18,6 @@ Some fixes -
 
 7) [Using ADB and Fastboot commands for Android in linux shell.](https://github.com/ObsidianMaximus/wifidrivers/blob/master/fastbootANDadb.txt)
 
-8) And ofcourse, the [**WIFIDRIVERS**.](https://github.com/ObsidianMaximus/wifidrivers/blob/main/commands_for_drivers.txt)
+8) [Realme GT Neo 2 bricked](https://github.com/ObsidianMaximus/wifidrivers/blob/master/bricked.md)
+
+9) And ofcourse, the [**WIFIDRIVERS**.](https://github.com/ObsidianMaximus/wifidrivers/blob/main/commands_for_drivers.txt)
