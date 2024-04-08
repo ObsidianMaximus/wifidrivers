@@ -20,4 +20,6 @@ Some fixes -
 
 8) [Realme GT Neo 2 bricked](https://github.com/ObsidianMaximus/wifidrivers/blob/master/bricked.md)
 
-9) And ofcourse, the [**WIFIDRIVERS**.](https://github.com/ObsidianMaximus/wifidrivers/blob/main/commands_for_drivers.txt)
+9) [Block Youtube](https://github.com/ObsidianMaximus/wifidrivers/blob/master/block_Youtube.md)
+
+10) And ofcourse, the [**WIFIDRIVERS**.](https://github.com/ObsidianMaximus/wifidrivers/blob/main/commands_for_drivers.txt)
