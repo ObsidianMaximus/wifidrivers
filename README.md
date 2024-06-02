@@ -22,4 +22,4 @@ Some fixes -
 
 9) [Block Youtube](https://github.com/ObsidianMaximus/wifidrivers/blob/master/block_Youtube.md)
 
-10) And ofcourse, the [**WIFIDRIVERS**.](https://github.com/ObsidianMaximus/wifidrivers/blob/main/commands_for_drivers.txt)
+10) And ofcourse, the [**WIFIDRIVERS**.](https://github.com/ObsidianMaximus/wifidrivers/blob/main/commands_for_drivers.sh)
