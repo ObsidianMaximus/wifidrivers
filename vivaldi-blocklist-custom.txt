@@ -1,0 +1,13 @@
+! Block YouTube home page video feed
+youtube.com##ytd-browse[page-subtype="home"]
+
+! Hide related videos sidebar (on video watch pages)
+www.youtube.com###related
+
+! Clean YouTube search results:
+! - Removes non-video/channel/playlist results
+! - Hides Shorts from appearing in video search results
+youtube.com##ytd-search ytd-item-section-renderer > #contents > :is(
+  :not(ytd-video-renderer, ytd-channel-renderer, ytd-playlist-renderer, yt-showing-results-for-renderer),
+  ytd-video-renderer:has([aria-label*="Shorts"])
+)
