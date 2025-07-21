@@ -226,10 +226,10 @@ user_pref("dom.security.https_only_mode_error_page_user_suggestions", true);
 // PREF: delete all browsing data on shutdown
 user_pref("privacy.sanitize.sanitizeOnShutdown", true);
 user_pref("privacy.clearOnShutdown_v2.cache", true);
-user_pref("privacy.clearOnShutdown_v2.cookiesAndStorage", true);
-user_pref("privacy.clearOnShutdown_v2.browsingHistoryAndDownloads", false);
-user_pref("privacy.clearOnShutdown_v2.downloads", false); // [HIDDEN]
-user_pref("privacy.clearOnShutdown_v2.formdata", false);
+//user_pref("privacy.clearOnShutdown_v2.cookiesAndStorage", true);
+//user_pref("privacy.clearOnShutdown_v2.browsingHistoryAndDownloads", false);
+//user_pref("privacy.clearOnShutdown_v2.downloads", false); // [HIDDEN]
+//user_pref("privacy.clearOnShutdown_v2.formdata", false);
 
 // PREF: after crashes or restarts, do not save extra session data
 // such as form content, scrollbar positions, and POST data
@@ -241,7 +241,7 @@ user_pref("browser.newtabpage.activity-stream.feeds.topsites", true);
 // Extras
 user_pref("media.av1.enabled", false);
 user_pref("toolkit.tabbox.switchByScrolling", true);
-
+user_pref("media.hardware-video-decoding.force-enabled", true);
 
 
 /****************************************************************************
