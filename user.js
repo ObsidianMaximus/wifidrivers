@@ -137,6 +137,7 @@ user_pref("toolkit.coverage.opt-out", true);
 user_pref("toolkit.coverage.endpoint.base", "");
 user_pref("browser.newtabpage.activity-stream.feeds.telemetry", false);
 user_pref("browser.newtabpage.activity-stream.telemetry", false);
+user_pref("datareporting.usage.uploadEnabled", false);
 
 /** EXPERIMENTS ***/
 user_pref("app.shield.optoutstudies.enabled", false);
@@ -147,10 +148,6 @@ user_pref("app.normandy.api_url", "");
 user_pref("breakpad.reportURL", "");
 user_pref("browser.tabs.crashReporting.sendReport", false);
 
-/** DETECTION ***/
-user_pref("captivedetect.canonicalURL", "");
-user_pref("network.captive-portal-service.enabled", false);
-user_pref("network.connectivity-service.enabled", false);
 
 /****************************************************************************
  * SECTION: PESKYFOX                                                        *
@@ -215,7 +212,7 @@ user_pref("layout.word_select.eat_space_to_next_word", false);
 user_pref("browser.newtabpage.activity-stream.showWeather", true);
 
 // Set memory cache capacity to 2 MB (in kilobytes)
-user_pref("browser.cache.memory.capacity", 2097152);
+user_pref("browser.cache.memory.capacity", 1048576);
 
 // PREF: enable HTTPS-Only Mode
 // Warn me before loading sites that don't support HTTPS
