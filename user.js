@@ -27,6 +27,9 @@ user_pref("gfx.content.skia-font-cache-size", 20);
 /** DISK CACHE ***/
 user_pref("browser.cache.disk.enable", false);
 
+/** MEMORY CACHE ***/
+user_pref("browser.sessionhistory.max_total_viewers", 4);
+
 /** MEDIA CACHE ***/
 user_pref("media.memory_cache_max_size", 65536);
 user_pref("media.cache_readahead_limit", 7200);
@@ -63,6 +66,8 @@ user_pref("browser.helperApps.deleteTempFileOnExit", true);
 user_pref("browser.uitour.enabled", false);
 user_pref("privacy.globalprivacycontrol.enabled", true);
 
+user_pref("security.csp.reporting.enabled", false);
+
 /** OCSP & CERTS / HPKP ***/
 user_pref("security.OCSP.enabled", 0);
 user_pref("security.pki.crlite_mode", 2);
@@ -84,7 +89,6 @@ user_pref("privacy.history.custom", true);
 user_pref("browser.urlbar.trimHttps", true);
 user_pref("browser.urlbar.untrimOnUserInteraction.featureGate", true);
 user_pref("browser.search.separatePrivateDefault.ui.enabled", true);
-user_pref("browser.urlbar.update2.engineAliasRefresh", true);
 user_pref("browser.search.suggest.enabled", false);
 user_pref("browser.urlbar.quicksuggest.enabled", false);
 user_pref("browser.urlbar.groupLabels.enabled", false);
@@ -119,6 +123,7 @@ user_pref("permissions.default.geo", 2);
 user_pref("geo.provider.network.url", "https://beacondb.net/v1/geolocate");
 user_pref("browser.search.update", false);
 user_pref("permissions.manager.defaultsUrl", "");
+user_pref("extensions.getAddons.cache.enabled", false);
 
 /** TELEMETRY ***/
 user_pref("datareporting.policy.dataSubmissionEnabled", false);
@@ -170,21 +175,24 @@ user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
 user_pref("browser.compactmode.show", true);
 user_pref("browser.privateWindowSeparation.enabled", false); // WINDOWS
 
+/** AI ***/
+user_pref("browser.ml.enable", false);
+user_pref("browser.ml.chat.enabled", false);
+
 /** FULLSCREEN NOTICE ***/
 user_pref("full-screen-api.transition-duration.enter", "0 0");
 user_pref("full-screen-api.transition-duration.leave", "0 0");
 user_pref("full-screen-api.warning.timeout", 0);
 
 /** URL BAR ***/
-user_pref("browser.urlbar.unitConversion.enabled", true);
 user_pref("browser.urlbar.trending.featureGate", false);
-user_pref("dom.text_fragments.create_text_fragment.enabled", true);
 
 /** NEW TAB PAGE ***/
 user_pref("browser.newtabpage.activity-stream.default.sites", "");
 user_pref("browser.newtabpage.activity-stream.showSponsoredTopSites", false);
 user_pref("browser.newtabpage.activity-stream.feeds.section.topstories", false);
 user_pref("browser.newtabpage.activity-stream.showSponsored", false);
+user_pref("browser.newtabpage.activity-stream.showSponsoredCheckboxes", false);
 
 /** POCKET ***/
 user_pref("extensions.pocket.enabled", false);
@@ -207,6 +215,8 @@ user_pref("layout.word_select.eat_space_to_next_word", false);
 // visit https://github.com/yokoffing/Betterfox/wiki/Common-Overrides
 // visit https://github.com/yokoffing/Betterfox/wiki/Optional-Hardening
 // Enter your personal overrides below this line:
+
+user_pref("dom.text_fragments.create_text_fragment.enabled", true);
 
 // PREF: show weather on New Tab page
 user_pref("browser.newtabpage.activity-stream.showWeather", true);
@@ -269,3 +279,4 @@ user_pref("mousewheel.default.delta_multiplier_y", 300); // 250-400; adjust this
 /****************************************************************************
  * END: BETTERFOX                                                           *
 ****************************************************************************/
+
