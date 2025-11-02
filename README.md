@@ -23,3 +23,11 @@ Some fixes -
 9) [Block Youtube](https://github.com/ObsidianMaximus/wifidrivers/blob/master/block_Youtube.md)
 
 10) And ofcourse, the [**WIFIDRIVERS**.](https://github.com/ObsidianMaximus/wifidrivers/blob/main/commands_for_drivers.sh)
+
+
+
+For the brave conf file, place it in .var/app/com.brave.Browser/config/ if you are using flatpak.
+
+Else if native install, edit the desktop icon file at: /usr/share/applications/brave-browser.desktop
+
+And add those lines in the conf file after this line: Exec=/usr/bin/brave-browser-stable %U
