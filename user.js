@@ -231,16 +231,16 @@ user_pref("dom.text_fragments.create_text_fragment.enabled", true);
 user_pref("browser.newtabpage.activity-stream.showWeather", true);
 
 // Set memory cache capacity to 2 MB (in kilobytes)
-user_pref("browser.cache.memory.capacity", 1048576);
+// user_pref("browser.cache.memory.capacity", 1048576); Already present above.
 
 // PREF: enable HTTPS-Only Mode
 // Warn me before loading sites that don't support HTTPS
 // in both Normal and Private Browsing windows.
-user_pref("dom.security.https_only_mode", true);
-user_pref("dom.security.https_only_mode_error_page_user_suggestions", true);
+// user_pref("dom.security.https_only_mode", true);
+// user_pref("dom.security.https_only_mode_error_page_user_suggestions", true);
 
 // PREF: delete all browsing data on shutdown
-user_pref("privacy.sanitize.sanitizeOnShutdown", true);
+// user_pref("privacy.sanitize.sanitizeOnShutdown", true);
 user_pref("privacy.clearOnShutdown_v2.cache", true);
 //user_pref("privacy.clearOnShutdown_v2.cookiesAndStorage", true);
 //user_pref("privacy.clearOnShutdown_v2.browsingHistoryAndDownloads", false);
@@ -288,4 +288,5 @@ user_pref("mousewheel.default.delta_multiplier_y", 300); // 250-400; adjust this
 /****************************************************************************
  * END: BETTERFOX                                                           *
 ****************************************************************************/
+
 
