@@ -12,16 +12,16 @@
  * "Ad meliora"                                                             *
  * version: 149                                                             *
  * url: https://github.com/yokoffing/Betterfox                              *
-****************************************************************************/
+ ****************************************************************************/
 
 /****************************************************************************
  * SECTION: FASTFOX                                                         *
-****************************************************************************/
-user_pref("gfx.canvas.accelerated.cache-size", 256); // reset pref
+ ****************************************************************************/
+user_pref("gfx.canvas.accelerated.cache-size", 256);
 
 /****************************************************************************
  * SECTION: SECUREFOX                                                       *
-****************************************************************************/
+ ****************************************************************************/
 /** TRACKING PROTECTION ***/
 user_pref("browser.contentblocking.category", "strict");
 user_pref("browser.download.start_downloads_in_tmp_dir", true);
@@ -33,6 +33,7 @@ user_pref("privacy.antitracking.isolateContentScriptResources", true);
 user_pref("security.csp.reporting.enabled", false);
 
 /** SSL / TLS ***/
+// Temporarily bypassed if you need to access local HTTP admin panels (like OpenWrt)
 user_pref("security.ssl.treat_unsafe_negotiation_as_broken", true);
 user_pref("browser.xul.error_pages.expert_bad_cert", true);
 user_pref("security.tls.enable_0rtt_data", false);
@@ -40,9 +41,8 @@ user_pref("security.tls.enable_0rtt_data", false);
 /** DISK AVOIDANCE ***/
 user_pref("browser.cache.disk.enable", false);
 user_pref("browser.privatebrowsing.forceMediaMemoryCache", true);
-user_pref("browser.sessionstore.interval", 15000); # this is from my own edit. dont remove!
-user_pref("browser.cache.memory.capacity", 1048576); # same, my override!
-user_pref("media.memory_cache_max_size", 65536);
+user_pref("browser.sessionstore.interval", 15000); // this is from my own edit. dont remove!
+user_pref("browser.cache.memory.capacity", 1048576); // same, my override!
 
 /** SHUTDOWN & SANITIZING ***/
 user_pref("privacy.history.custom", true);
@@ -54,23 +54,18 @@ user_pref("browser.urlbar.untrimOnUserInteraction.featureGate", true);
 user_pref("browser.search.separatePrivateDefault.ui.enabled", true);
 user_pref("browser.urlbar.quicksuggest.enabled", false);
 user_pref("browser.urlbar.groupLabels.enabled", false);
-user_pref("network.IDN_show_punycode", true);
 
 /** HTTPS-ONLY MODE ***/
 user_pref("dom.security.https_only_mode", true);
 user_pref("dom.security.https_only_mode_error_page_user_suggestions", true);
 
 /** PASSWORDS ***/
-user_pref("signon.formlessCapture.enabled", false);
 user_pref("signon.privateBrowsingCapture.enabled", false);
 user_pref("network.auth.subresource-http-auth-allow", 1);
 user_pref("editor.truncate_user_pastes", false);
 
 /** EXTENSIONS ***/
 user_pref("extensions.enabledScopes", 5);
-
-/** HEADERS / REFERERS ***/
-user_pref("network.http.referer.XOriginTrimmingPolicy", 2);
 
 /** CONTAINERS ***/
 user_pref("privacy.userContext.ui.enabled", true);
@@ -84,7 +79,6 @@ user_pref("browser.safebrowsing.downloads.remote.enabled", false);
 /** MOZILLA ***/
 user_pref("permissions.default.desktop-notification", 2);
 user_pref("permissions.default.geo", 2);
-user_pref("geo.provider.network.url", "https://beacondb.net/v1/geolocate");
 user_pref("browser.search.update", false);
 user_pref("permissions.manager.defaultsUrl", "");
 user_pref("extensions.getAddons.cache.enabled", false);
@@ -119,7 +113,7 @@ user_pref("browser.tabs.crashReporting.sendReport", false);
 
 /****************************************************************************
  * SECTION: PESKYFOX                                                        *
-****************************************************************************/
+ ****************************************************************************/
 /** MOZILLA UI ***/
 user_pref("extensions.getAddons.showPane", false);
 user_pref("extensions.htmlaboutaddons.recommendations.enabled", false);
@@ -136,7 +130,7 @@ user_pref("browser.profiles.enabled", true);
 /** THEME ADJUSTMENTS ***/
 user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
 user_pref("browser.compactmode.show", true);
-user_pref("browser.privateWindowSeparation.enabled", false); // WINDOWS
+user_pref("browser.privateWindowSeparation.enabled", false);
 
 /** AI ***/
 user_pref("browser.ai.control.default", "blocked");
@@ -174,36 +168,11 @@ user_pref("layout.word_select.eat_space_to_next_word", false);
 
 /****************************************************************************
  * START: MY OVERRIDES                                                      *
-****************************************************************************/
-// visit https://github.com/yokoffing/Betterfox/wiki/Common-Overrides
-// visit https://github.com/yokoffing/Betterfox/wiki/Optional-Hardening
-// Enter your personal overrides below this line:
-
+ ****************************************************************************/
 user_pref("dom.text_fragments.create_text_fragment.enabled", true);
 
 // PREF: show weather on New Tab page
 user_pref("browser.newtabpage.activity-stream.showWeather", true);
-
-// Set memory cache capacity to 2 MB (in kilobytes)
-// user_pref("browser.cache.memory.capacity", 1048576); Already present above.
-
-// PREF: enable HTTPS-Only Mode
-// Warn me before loading sites that don't support HTTPS
-// in both Normal and Private Browsing windows.
-// user_pref("dom.security.https_only_mode", true);
-// user_pref("dom.security.https_only_mode_error_page_user_suggestions", true);
-
-// PREF: delete all browsing data on shutdown
-// user_pref("privacy.sanitize.sanitizeOnShutdown", true);
-user_pref("privacy.clearOnShutdown_v2.cache", true);
-//user_pref("privacy.clearOnShutdown_v2.cookiesAndStorage", true);
-//user_pref("privacy.clearOnShutdown_v2.browsingHistoryAndDownloads", false);
-//user_pref("privacy.clearOnShutdown_v2.downloads", false); // [HIDDEN]
-//user_pref("privacy.clearOnShutdown_v2.formdata", false);
-
-// PREF: after crashes or restarts, do not save extra session data
-// such as form content, scrollbar positions, and POST data
-user_pref("browser.sessionstore.privacy_level", 2);
 
 // PREF: restore Top Sites on New Tab page
 user_pref("browser.newtabpage.activity-stream.feeds.topsites", true);
@@ -211,23 +180,16 @@ user_pref("browser.newtabpage.activity-stream.feeds.topsites", true);
 // Extras
 user_pref("media.av1.enabled", false);
 user_pref("toolkit.tabbox.switchByScrolling", true);
-user_pref("media.hardware-video-decoding.force-enabled", true);
 
+// PREF: after crashes or restarts, do not save extra session data
+// such as form content, scrollbar positions, and POST data
+user_pref("browser.sessionstore.privacy_level", 2);
 
 /****************************************************************************
  * SECTION: SMOOTHFOX                                                       *
-****************************************************************************/
-// visit https://github.com/yokoffing/Betterfox/blob/main/Smoothfox.js
-// Enter your scrolling overrides below this line:
-
-/****************************************************************************************
- * OPTION: NATURAL SMOOTH SCROLLING V3 [MODIFIED]                                      *
-****************************************************************************************/
+ ****************************************************************************/
 // credit: https://github.com/AveYo/fox/blob/cf56d1194f4e5958169f9cf335cd175daa48d349/Natural%20Smooth%20Scrolling%20for%20user.js
-// recommended for 120hz+ displays
-// largely matches Chrome flags: Windows Scrolling Personality and Smooth Scrolling
-user_pref("apz.overscroll.enabled", true); // DEFAULT NON-LINUX
-user_pref("general.smoothScroll", true); // DEFAULT
+user_pref("general.smoothScroll", true);
 user_pref("general.smoothScroll.msdPhysics.continuousMotionMaxDeltaMS", 12);
 user_pref("general.smoothScroll.msdPhysics.enabled", true);
 user_pref("general.smoothScroll.msdPhysics.motionBeginSpringConstant", 600);
@@ -237,9 +199,3 @@ user_pref("general.smoothScroll.msdPhysics.slowdownMinDeltaRatio", "2");
 user_pref("general.smoothScroll.msdPhysics.slowdownSpringConstant", 250);
 user_pref("general.smoothScroll.currentVelocityWeighting", "1");
 user_pref("general.smoothScroll.stopDecelerationWeighting", "1");
-user_pref("mousewheel.default.delta_multiplier_y", 300); // 250-400; adjust this number to your liking
-
-/****************************************************************************
- * END: BETTERFOX                                                           *
-****************************************************************************/
-
