@@ -206,6 +206,9 @@ user_pref("toolkit.tabbox.switchByScrolling", true);
 // such as form content, scrollbar positions, and POST data
 user_pref("browser.sessionstore.privacy_level", 2);
 
+// prioritize japanese over chinese characters
+user_pref("font.cjk_pref_fallback_order", "ja, zh-cn, zh-hk, zh-tw, ko");
+
 /****************************************************************************
  * SECTION: SMOOTHFOX                                                       *
  ****************************************************************************/
